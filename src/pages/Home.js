@@ -1,88 +1,83 @@
+// Home.js
 function Home() {
   return (
-    <div
-      style={{
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        minHeight: "90vh",
-        padding: "40px",
-        background: "#fffaf7", // light coral background for harmony
-      }}
-    >
-      {/* Left: Picture */}
-      <div style={{ flex: "1", display: "flex", justifyContent: "center" }}>
-        <img
-          src="/photo.jpeg"
-          alt="My picture"
-          style={{
-            width: "280px",
-            height: "280px",
-            borderRadius: "50%",
-            objectFit: "cover",
-            boxShadow: "0 6px 15px rgba(0,0,0,0.2)",
-            border: "4px solid #e9967a",
-          }}
-        />
+    <div className="home-section">
+      <div className="home-image">
+        <img src="/photo.jpeg" alt="My picture" />
       </div>
-
-      {/* Right: Text */}
-      <div style={{ flex: "1", padding: "20px 40px" }}>
-        <h1 style={{ fontSize: "2.5rem", marginBottom: "10px", color: "#333" }}>
-          👋 Hi, I'm{" "}
-          <span style={{ color: "#e9967a" }}>Nagamani Mannempalli</span>
-        </h1>
-        <h3 style={{ color: "#444", marginBottom: "20px" }}>
-          A Frontend Developer
-        </h3>
-        <p
-          style={{
-            fontSize: "1.1rem",
-            lineHeight: "1.6",
-            color: "#555",
-            marginBottom: "25px",
-            maxWidth: "600px",
-          }}
-        >
-          I’m a 3rd-year Computer Science student with a strong focus on{" "}
-          <b style={{ color: "#e9967a" }}>Frontend Development</b>. I
-          specialize in building responsive, user-friendly, and visually
-          appealing web applications using{" "}
-          <b>React, JavaScript, HTML, and CSS</b>. My goal is to create smooth
-          user experiences with clean and efficient code.
+      <div className="home-text">
+        <h1>👋 Hi, I'm <span>Nagamani Mannempalli</span></h1>
+        <h3>A Frontend Developer</h3>
+        <p>
+          I’m a 3rd-year Computer Science student with a strong focus on <b>Frontend Development</b>. I specialize in building responsive, user-friendly, and visually appealing web applications using <b>React, JavaScript, HTML, and CSS</b>.
         </p>
-
-        {/* Buttons */}
-        <div style={{ display: "flex", gap: "20px" }}>
-          <a
-            href="/projects"
-            style={{
-              background: "#e9967a",
-              color: "#fff",
-              padding: "12px 20px",
-              borderRadius: "30px",
-              textDecoration: "none",
-              fontWeight: "500",
-              transition: "0.3s",
-              boxShadow: "0 4px 10px rgba(233,150,122,0.4)",
-            }}
-            onMouseOver={(e) =>
-              (e.target.style.background = "#fff",
-                e.target.style.border = '1px solid #e9967a',
-                e.target.style.color='#e9967a'
-              )
-            }
-            onMouseOut={(e) =>
-              (e.target.style.background = "#e9967a",
-                e.target.style.color='#fff'
-              )
-
-            }
-          >
-            View Projects
-          </a>
+        <div className="home-buttons">
+          <a href="/projects">View Projects</a>
         </div>
       </div>
+
+      <style>{`
+        .home-section {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          min-height: 90vh;
+          padding: 40px;
+          background: #fffaf7;
+          gap: 40px;
+        }
+        .home-image img {
+          width: 280px;
+          height: 280px;
+          border-radius: 50%;
+          object-fit: cover;
+          box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+          border: 4px solid #e9967a;
+        }
+        .home-text h1 {
+          font-size: 2.5rem;
+          color: #333;
+        }
+        .home-text h1 span {
+          color: #e9967a;
+        }
+        .home-text h3 {
+          color: #444;
+          margin-bottom: 20px;
+        }
+        .home-text p {
+          font-size: 1.1rem;
+          line-height: 1.6;
+          color: #555;
+          margin-bottom: 25px;
+          max-width: 600px;
+        }
+        .home-buttons a {
+          background: #e9967a;
+          color: #fff;
+          padding: 12px 20px;
+          border-radius: 30px;
+          text-decoration: none;
+          font-weight: 500;
+          transition: 0.3s;
+          box-shadow: 0 4px 10px rgba(233,150,122,0.4);
+        }
+        .home-buttons a:hover {
+          background: #fff;
+          color: #e9967a;
+          border: 1px solid #e9967a;
+        }
+
+        @media(max-width:1024px){
+          .home-section{
+            flex-direction: column;
+            text-align: center;
+          }
+          .home-buttons{
+            justify-content:center;
+          }
+        }
+      `}</style>
     </div>
   );
 }
