@@ -18,6 +18,24 @@ function Projects() {
       githubLink: "https://github.com/NagamaniMannempalli/Weather-app.git",
       image: "https://res.cloudinary.com/dq28vzzk1/image/upload/v1755870660/weather_rvpnmt.png",
     },
+    {
+  title: "Medicine Tracker App",
+  description: "A React app to manage medicines with a calendar view. Users can add, view, and delete medicines, and see medicines scheduled for each day in a responsive card layout.",
+  tech: "React, Context API, React Router, CSS, react-calendar",
+  liveLink: "https://prescription-remainder.vercel.app/", // replace with your deployed URL
+  githubLink: "https://github.com/NagamaniMannempalli/Prescription-Remainder.git",
+  image: "https://res.cloudinary.com/dsflmmlw4/image/upload/v1755960520/Screenshot_from_2025-08-23_20-16-51_a4vfgs.png", // replace with your project screenshot URL
+},
+{
+  title: "Lost and Found App",
+  description: "A platform to report and track lost & found items with features like item reporting, searching, and pagination.",
+  tech: "React, CSS, JavaScript, LocalStorage",
+  liveLink: "https://lost-and-found-tawny.vercel.app/",
+  githubLink: "https://github.com/NagamaniMannempalli/Lost-and-Found.git",
+  image: "https://res.cloudinary.com/dsflmmlw4/image/upload/v1756060685/Screenshot_from_2025-08-25_00-08-18_fk6e6a.png",
+}
+
+
   ];
 
   return (
