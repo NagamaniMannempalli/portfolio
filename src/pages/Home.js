@@ -3,15 +3,15 @@ function Home() {
   return (
     <div className="home-section">
       <div className="home-image">
-        <img src="/photo.jpeg" alt="My picture" />
+        <img src="/photo.jpeg" alt="Nagamani Mannempalli" />
       </div>
       <div className="home-text">
         <h1>👋 Hi, I'm <span>Nagamani Mannempalli</span></h1>
-        <h3>A Frontend Developer</h3>
+        <h3>A Java Full Stack Developer</h3>
         <p>
-          I’m a 3rd-year Computer Science student with a strong focus on <b>Frontend Development</b>. 
-          I specialize in building responsive, user-friendly, and visually appealing web applications using 
-          <b> React, JavaScript, HTML, and CSS</b>.
+          I'm a 3rd-year Computer Science student with a strong focus on <b>Java Full Stack Development</b>. 
+          I specialize in building robust, scalable web applications using 
+          <b> Spring Boot, React, Java, and SQL</b>.
         </p>
         <div className="home-buttons">
           <a href="/projects" className="projects-btn">View Projects</a>
@@ -77,7 +77,6 @@ function Home() {
           box-shadow: 0 4px 12px rgba(0,0,0,0.1);
         }
 
-        /* View Projects Button */
         .projects-btn {
           background: #e9967a;
           color: #fff;
@@ -89,7 +88,6 @@ function Home() {
           box-shadow: 0 6px 15px rgba(233,150,122,0.3);
         }
 
-        /* Download Resume Button */
         .resume-btn {
           background: #fff;
           color: #e9967a;
