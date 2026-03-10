@@ -1,5 +1,6 @@
 import React from "react";
-import { FaReact, FaHtml5, FaCss3Alt, FaJsSquare } from "react-icons/fa";
+import { FaJava, FaReact, FaDatabase } from "react-icons/fa";
+import { SiSpringboot, SiMysql } from "react-icons/si";
 
 function About() {
   return (
@@ -11,19 +12,20 @@ function About() {
         <div className="about-text">
           <h2>About Me</h2>
           <p>
-            Hi, I'm <strong>Nagamani Mannempalli</strong>, a 3rd Year B.Tech Computer Science student passionate about building modern web applications and solving real-world problems.
+            Hi, I'm <strong>Nagamani Mannempalli</strong>, a 3rd Year B.Tech Computer Science student passionate about building robust full-stack web applications and solving real-world problems.
           </p>
           <p>
-            I specialize in <strong>Frontend Development</strong> with strong skills in React.js, JavaScript, HTML, CSS, and modern UI frameworks.
+            I specialize in <strong>Java Full Stack Development</strong> with strong skills in Java, Spring Boot, React.js, REST APIs, and MySQL.
           </p>
           <p>
-            I am seeking internship opportunities to apply my skills, learn from industry experts, and contribute to impactful projects.
+            I am seeking internship/job opportunities to apply my skills, learn from industry experts, and contribute to impactful projects.
           </p>
           <div className="skills-icons">
+            <FaJava />
+            <SiSpringboot />
             <FaReact />
-            <FaJsSquare />
-            <FaHtml5 />
-            <FaCss3Alt />
+            <SiMysql />
+            <FaDatabase />
           </div>
         </div>
       </div>

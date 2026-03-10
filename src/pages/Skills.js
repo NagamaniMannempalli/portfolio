@@ -1,11 +1,13 @@
 import React from "react";
-import { FaStar, FaStarHalfAlt } from "react-icons/fa";
+import { FaStar, FaStarHalfAlt, FaRegStar } from "react-icons/fa";
 
 function Skills() {
   return (
     <section className="skills-section">
       <h2>My Skills</h2>
       <div className="skills-container">
+
+        {/* Frontend Skills */}
         <div className="skill-card">
           <h3>HTML</h3>
           <div className="stars"><FaStar /><FaStar /><FaStar /><FaStar /><FaStarHalfAlt /></div>
@@ -22,14 +24,46 @@ function Skills() {
           <h3>React</h3>
           <div className="stars"><FaStar /><FaStar /><FaStar /><FaStarHalfAlt /></div>
         </div>
+
+        {/* Backend / Core Skills */}
         <div className="skill-card">
           <h3>Core Java</h3>
           <div className="stars"><FaStar /><FaStar /><FaStar /><FaStar /></div>
         </div>
         <div className="skill-card">
+          <h3>Spring Framework</h3>
+          <div className="stars"><FaStar /><FaStar /><FaStar /><FaStarHalfAlt /></div>
+        </div>
+        <div className="skill-card">
+          <h3>Spring Boot</h3>
+          <div className="stars"><FaStar /><FaStar /><FaStar /><FaStarHalfAlt /></div>
+        </div>
+        <div className="skill-card">
+          <h3>REST APIs</h3>
+          <div className="stars"><FaStar /><FaStar /><FaStar /><FaStarHalfAlt /></div>
+        </div>
+        <div className="skill-card">
+          <h3>Hibernate / JPA</h3>
+          <div className="stars"><FaStar /><FaStar /><FaStar /><FaRegStar /></div>
+        </div>
+
+        {/* Database */}
+        <div className="skill-card">
           <h3>SQL</h3>
           <div className="stars"><FaStar /><FaStar /><FaStar /><FaStar /></div>
         </div>
+        
+
+        {/* Tools */}
+        <div className="skill-card">
+          <h3>Git & GitHub</h3>
+          <div className="stars"><FaStar /><FaStar /><FaStar /><FaStarHalfAlt /></div>
+        </div>
+        <div className="skill-card">
+          <h3>Postman</h3>
+          <div className="stars"><FaStar /><FaStar /><FaStar /><FaStarHalfAlt /></div>
+        </div>
+
       </div>
 
       <style>{`
